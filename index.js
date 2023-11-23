@@ -81,8 +81,8 @@ app.post("/delete/",(req, res)=> {
 
 posts.push({
     id: nextId++,
-    postTitle: "this is wokring",
-    postContent: "lets see what i get back"
+    postTitle: "Exploring Innovative Solutions in the Tech Industry",
+    postContent: "In today's rapidly evolving tech landscape, we delve into groundbreaking solutions that are shaping the future. Join us on this insightful journey."
 })
 
 app.listen(port, ()=> {
