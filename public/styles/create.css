@@ -1,0 +1,68 @@
+body{
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    background-color: rgb(213, 245, 234);
+    
+  
+}
+.myForm{
+    background-color: rgb(250, 246, 242);
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+#myForm{
+    background-color: rgb(250, 246, 242);
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    background-color: rgb(226, 188, 141);
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin-left: 170px;
+
+}
+
+button:hover {
+    background-color:#ffa07a;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+footer{
+    background-color: #f3ecec;
+    border-top: 1px solid #000;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}

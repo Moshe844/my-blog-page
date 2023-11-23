@@ -1,0 +1,105 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 700px;
+    margin-left: 600px;
+    
+}
+
+.viewForm{
+    background-color: rgb(236, 224, 207);
+    width: 100%;
+    padding: 20px;
+    height: 220px;
+    border-radius: 12px;
+}
+
+#edit {
+    height: 50px;
+    padding: 20px;
+    width: 83%;
+    margin-bottom: 10px; 
+    margin-right: 18px;/* Add margin to separate from the delete button */
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(252, 206, 150);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+#edit:hover{
+    background-color: #ffa07a;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form{
+    width: 250px;
+    margin-left: 20px;
+}
+
+#delete {
+    height: 50px;
+    padding: 20px;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(252, 206, 150);
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    line-height: 12px;
+    cursor: pointer;
+}
+
+
+#delete:hover {
+    background-color: #ffa07a;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.update {
+    background-color: rgb(236, 224, 207);
+    padding: 6px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    width: 50%;
+    height: 135px;
+    margin-top: 110px;
+  
+}
+footer{
+    background-color: #f3ecec;
+    border-top: 1px solid #000;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media(max-width: 760px){
+    .container{
+    margin-left: 0;
+    }
+    .update{
+        width: 90%;
+        margin-top: 20px;
+    }
+}

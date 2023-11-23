@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/view.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <title>Views</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="container">
+        <div class="viewForm">
+            <h2><em><strong>Title:</strong> </em> <em><%= post.postTitle %></em></h2>
+            <p><em><strong>Content:</strong> </em> <em><%= post.postContent %></em></p>
+       </div>
+      <div class="update">
+        <a id="edit" href="/edit/<%= post.id %>">Edit</a>
+        <form action="/delete" method="post">
+            <input type="hidden" name="postId" value="<%= post.id %>">
+            <button type="submit" id="delete" name="delete">Delete</button>
+        </form>
+        
+      </div>
+    </div>
+   
+
+
+
+
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

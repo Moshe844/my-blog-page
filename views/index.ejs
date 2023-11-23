@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <title>Blog</title>
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <% if(posts.length === 0){ %>
+        <h1 id="message">No posts at the moment☹️  </h1>
+    <% } else {  %>
+        <div class="postContainer">
+       <% posts.forEach((post) => { %>
+        
+            <div class="posts">
+                <h2 id="myH2"><strong>Title: </strong> <%= post.postTitle %></h1>
+                <p id="myP"><strong>Content: </strong> <%= post.postContent %></p>
+
+                <a id="myA" href="/views/<%= post.id %>">View more</a>
+            </div>
+          
+       
+       <% })  %>
+        </div>
+   <% }  %> 
+    
+
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
